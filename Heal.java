@@ -34,4 +34,16 @@ public class Heal extends Actor
         
         animationTimer.mark();
     }
+    
+    int imageIndex = 0;
+    public void animateHealthWorm() {
+        if(animationTimer.millisElapsed() < 50)
+        {
+            return;
+        }
+        animationTimer.mark();
+        
+        setImage(Heal[imageIndex]);
+        imageIndex = (imageIndex + 1) % Heal.length;
+    }
 }
