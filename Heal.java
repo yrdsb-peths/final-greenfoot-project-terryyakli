@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Heal here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Theresa Li 
+ * @version January 2024
  */
 public class Heal extends Actor
 {
@@ -15,5 +15,8 @@ public class Heal extends Actor
     public void act()
     {
         // Add your action code here.
+        int x = getX();
+        int y = getY();
+        
     }
 }
