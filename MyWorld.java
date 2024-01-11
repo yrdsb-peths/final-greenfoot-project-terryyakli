@@ -1,8 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Theresa Li 
+ * @version January 2024
  */
 public class MyWorld extends World
 {
@@ -78,7 +78,7 @@ public class MyWorld extends World
         Plant Plant = new Plant();
         int x = randomNumber(40, 760);
         int y = randomNumber(50, 410);
-        addObject(Coin, x, y);
+        addObject(Plant, x, y);
     }
     
     public void increaseScore()
