@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Heal extends Actor
 {
+    SimpleTimer animationTimer = new SimpleTimer();
+    
     /**
      * Act - do whatever the Heal wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -18,5 +20,18 @@ public class Heal extends Actor
         int x = getX();
         int y = getY();
         setLocation(x,y);
+        animateHealthWorm();
+    }
+    
+    GreenfootImage[] Heal = new GreenfootImage[4];
+    
+    public Heal() {
+        for(int i = 0; i<Heal.length; i++) {
+            Heal[i] = new GreenfootImage("images/worm_idle/worm" + i +".png");
+            Heal[i].scale(45,45);
+            setImage(Heal[i]);
+        }
+        
+        animationTimer.mark();
     }
 }
