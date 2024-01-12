@@ -8,12 +8,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Health extends Actor
 {
+    int health = 6;
+    int healthBarWidth = 200;
+    int healthBarHeight = 15;
+    int healthPoint = (int)healthBarWidth/health;
+    
     /**
      * Act - do whatever the Health wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        // Add your action code here.
+        work();
     }
+    
+    public 
 }
