@@ -115,7 +115,7 @@ public class Axo extends Actor
         {
             removeTouching(Fish.class);
             MyWorld world = (MyWorld) getWorld();
-            Health Health = world.getPlayerHealthBar();
+            Health Health = world.getAxoHealthBar();
             if(x == false)
             {
                 Health.damage();
@@ -140,7 +140,7 @@ public class Axo extends Actor
         {
             removeTouching(Heal.class);
             MyWorld world = (MyWorld) getWorld();
-            Health Health = world.getPlayerHealthBar();
+            Health Health = world.getAxoHealthBar();
             if(y == false)
             {
                 if(Health.health == 5)
