@@ -55,26 +55,26 @@ public class Axo extends Actor
     
     public Axo()
     {
-        for(int i = 0; i < axRight.length; i++)
+        for(int i = 0; i < axoRight.length; i++)
         {
             axoRight[i] = new GreenfootImage("images/ax_idle/ax" + i + ".png");
             axoRight[i].scale(50, 50);
             setImage(axoRight[i]);
         }
 
-        for(int i = 0; i < axLeft.length; i++)
+        for(int i = 0; i < axoLeft.length; i++)
         {
-            axLeft[i] = new GreenfootImage("images/ax_idle/ax" + i + ".png");
-            axLeft[i].mirrorHorizontally();
-            axLeft[i].scale(50, 50);
-            setImage(axLeft[i]);
+            axoLeft[i] = new GreenfootImage("images/ax_idle/ax" + i + ".png");
+            axoLeft[i].mirrorHorizontally();
+            axoLeft[i].scale(50, 50);
+            setImage(axoLeft[i]);
         }
 
         animationTimer.mark();
     }
     
     int imageIndex = 0;
-    public void animateAx()
+    public void animateAxo()
     {
         if(animationTimer.millisElapsed() < 100)
         {
@@ -84,13 +84,13 @@ public class Axo extends Actor
         
         if(facing.equals("right"))
         {
-            setImage(axRight[imageIndex]);
-            imageIndex = (imageIndex + 1) % axRight.length;
+            setImage(axoRight[imageIndex]);
+            imageIndex = (imageIndex + 1) % axoRight.length;
         }
         else
         {
-            setImage(axLeft[imageIndex]);
-            imageIndex = (imageIndex + 1) % axLeft.length;
+            setImage(axoLeft[imageIndex]);
+            imageIndex = (imageIndex + 1) % axoLeft.length;
         }
     }
     
@@ -115,7 +115,7 @@ public class Axo extends Actor
         {
             removeTouching(Fish.class);
             MyWorld world = (MyWorld) getWorld();
-            Health Health = world.getPlayerHealthBar();
+            Health Health = world.getAxoHealthBar();
             if(x == false)
             {
                 Health.damage();
@@ -140,7 +140,7 @@ public class Axo extends Actor
         {
             removeTouching(Heal.class);
             MyWorld world = (MyWorld) getWorld();
-            Health Health = world.getPlayerHealthBar();
+            Health Health = world.getAxoHealthBar();
             if(y == false)
             {
                 if(Health.health == 5)
