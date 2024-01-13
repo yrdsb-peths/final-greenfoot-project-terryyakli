@@ -32,10 +32,10 @@ public class EndScreen extends World
     public void prepare()
     {
         Label gameOverLabel = new Label("Game over", 100);
-        addObject(gameOverLabel, 300, 75);
-        
+        addObject(gameOverLabel, 300, 200);
+
         Label label = new Label ("Press [space] to restart", 40);
-        addObject(label, 300, 360);
+        addObject(label, 300, 280);
     }
     
     
