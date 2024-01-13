@@ -25,7 +25,7 @@ public class MyWorld extends World
     
     public void prepare() {
         Axo Axo = new Axo();
-        addObject(axo, 100, 250);
+        addObject(Axo, 100, 250);
         
         plantLabel = new Label(0, 50);
         addObject(plantLabel, 150, 470);

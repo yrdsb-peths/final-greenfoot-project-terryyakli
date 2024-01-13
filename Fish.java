@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Fish extends Actor
 {
     int speed = 1;
-    GreenfootImage[] Fish = new greenfootImage[4];
+    GreenfootImage[] Fish = new GreenfootImage[4];
     SimpleTimer animationTimer = new SimpleTimer();
     
     /**
