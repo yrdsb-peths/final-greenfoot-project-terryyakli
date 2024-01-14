@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Plant extends Actor
 {
-    GreenfootImage[] Plant = new GreenfootImage[3];
+    GreenfootImage[] Plant = new GreenfootImage[2];
     SimpleTimer animationTimer = new SimpleTimer();
     
     /**
