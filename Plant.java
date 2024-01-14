@@ -3,12 +3,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Plant here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Theresa  
+ * @version January 2024
  */
 public class Plant extends Actor
 {
-    GreenfootImage[] Plant = new GreenfootImage[3];
+    GreenfootImage[] Plant = new GreenfootImage[2];
     SimpleTimer animationTimer = new SimpleTimer();
     
     /**

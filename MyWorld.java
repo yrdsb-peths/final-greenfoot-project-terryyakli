@@ -10,7 +10,7 @@ public class MyWorld extends World
     Label plantLabel;
     int speed = 1;
     
-    Health playerHealtherBar = new Health();
+    Health axoHealthBar = new Health();
     
     /**
      * Constructor for objects of class GameMap.
@@ -32,7 +32,7 @@ public class MyWorld extends World
         
         
         
-        addObject(AxoHealthBar, 110, 20);
+        addObject(axoHealthBar, 110, 20);
         
         fishPattern();
         createPlant();
@@ -102,6 +102,6 @@ public class MyWorld extends World
     
     public Health getAxoHealthBar()
     {
-        return AxoHealthBar;
+        return axoHealthBar;
     }
 }
