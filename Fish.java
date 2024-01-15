@@ -39,7 +39,7 @@ public class Fish extends Actor
         for(int i = 0; i < Fish.length; i++)
         {
             Fish[i] = new GreenfootImage("images/blue_fish/bfish" + i + ".png");
-            Fish[i].scale(100, 50);
+            Fish[i].scale(80, 50);
             setImage(Fish[i]);
         }
         

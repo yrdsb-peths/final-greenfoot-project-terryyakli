@@ -28,11 +28,11 @@ public class MyWorld extends World
         addObject(Axo, 100, 250);
 
         plantLabel = new Label(0, 50);
-        addObject(plantLabel, 150, 470);
+        addObject(plantLabel, 150, 650);
         
         
         
-        addObject(axoHealthBar, 110, 20);
+        addObject(axoHealthBar, 120, 25);
         
         fishPattern();
         createPlant();
@@ -42,9 +42,9 @@ public class MyWorld extends World
     
     public void stuff() {
         Label health = new Label("HP" , 20);
-        addObject(health, 25, 50);
+        addObject(health, 250, 50);
         Label plant = new Label("Plants: ",50);
-        addObject(plant, 70, 450);
+        addObject(plant, 100, 650);
     }
     
     public void gameOver() {
@@ -62,7 +62,7 @@ public class MyWorld extends World
     
     public void fishPattern()
     {
-        for(int i = 0; i <= 4; i++)
+        for(int i = 0; i <= 2; i++)
         {
             createFish();
         }
