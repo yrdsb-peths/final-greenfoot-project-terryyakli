@@ -58,7 +58,7 @@ public class Axo extends Actor
         for(int i = 0; i < axoRight.length; i++)
         {
             axoRight[i] = new GreenfootImage("images/ax_idle/ax" + i + ".png");
-            axoRight[i].scale(50, 50);
+            axoRight[i].scale(80, 50);
             setImage(axoRight[i]);
         }
 
@@ -66,7 +66,7 @@ public class Axo extends Actor
         {
             axoLeft[i] = new GreenfootImage("images/ax_idle/ax" + i + ".png");
             axoLeft[i].mirrorHorizontally();
-            axoLeft[i].scale(50, 50);
+            axoLeft[i].scale(80, 50);
             setImage(axoLeft[i]);
         }
 

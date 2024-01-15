@@ -28,7 +28,7 @@ public class Heal extends Actor
     public Heal() {
         for(int i = 0; i<Heal.length; i++) {
             Heal[i] = new GreenfootImage("images/worm_idle/worm" + i +".png");
-            Heal[i].scale(45,45);
+            Heal[i].scale(80,50);
             setImage(Heal[i]);
         }
         
