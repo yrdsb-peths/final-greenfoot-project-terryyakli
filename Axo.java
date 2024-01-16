@@ -113,7 +113,7 @@ public class Axo extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createPlant();
             world.increaseScore();
-            //play crunch sound
+            Greenfoot.playSound("crunch.mp3");
         }
     }
     
@@ -128,38 +128,6 @@ public class Axo extends Actor
             if(x == false)
             {
                 Health.damage();
-                world.createFish();
-                x = true;
-                if(Health.health <=0)
-                {
-                    world.gameOver();
-                }
-            }
-        }
-        if(isTouching(Fish2.class))
-        {
-            removeTouching(Fish2.class);
-            MyWorld world = (MyWorld) getWorld();
-            Health Health = world.getAxoHealthBar();
-            if(x == false)
-            {
-                Health.damage2();
-                world.createFish();
-                x = true;
-                if(Health.health <=0)
-                {
-                    world.gameOver();
-                }
-            }
-        }
-        if(isTouching(Fish3.class))
-        {
-            removeTouching(Fish3.class);
-            MyWorld world = (MyWorld) getWorld();
-            Health Health = world.getAxoHealthBar();
-            if(x == false)
-            {
-                Health.damage3();
                 world.createFish();
                 x = true;
                 if(Health.health <=0)

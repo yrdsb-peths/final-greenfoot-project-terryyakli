@@ -64,6 +64,7 @@ public class MyWorld extends World
         addObject(Fish, x, y);
     }
     
+    
     public void createFish2() {
         Fish Fish2 = new Fish();
         Fish2.setSpeed(speed);
@@ -82,6 +83,8 @@ public class MyWorld extends World
     
     public void fishPattern()
     {
+        int min = 0;
+        int max = 3;
         for(int i = 0; i <= 1; i++)
         {
             int randomNum = (int)(Math.random()*(max-min))+min;

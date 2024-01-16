@@ -30,19 +30,6 @@ public class Health extends Actor
         health--;
     }
     
-    public void damage2()
-    {
-        health--;
-        health--;
-    }
-    
-    public void damage3()
-    {
-        health--;
-        health--;
-        health--;
-    }
-    
     /*
      * adds health points if worms are eaten
      */
