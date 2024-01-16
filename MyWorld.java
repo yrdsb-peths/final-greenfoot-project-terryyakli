@@ -36,7 +36,13 @@ public class MyWorld extends World
         createPlant();
         createHeal();
         stuff();
+        
+        
+        BackButton backButton = new BackButton();
+        addObject(backButton, 500, 500);
     }
+    
+    
     
     public void stuff() {
         Label health = new Label("HP" , 20);
@@ -76,26 +82,23 @@ public class MyWorld extends World
     
     public void fishPattern()
     {
-        int min = 1;
-        int max = 3;
-        for(int i = 0; i <= 2; i++)
+        int min = 0;
+        int max = 2;
+        for(int i = 0; i <= 1; i++)
         {
-            int randomNum = (int)(Math.random()*(max-min+1))+min;
-            if(randomNum == 1)
+            int randomNum = (int)(Math.random()*(max-min))+min;
+            if(randomNum == 0)
             {
                 createFish();
             }
-            if(randomNum == 2)
+            if(randomNum == 1)
             {
                 createFish2();
             }
-            if(randomNum == 3)
+            if(randomNum == 2)
             {
                 createFish3();
             }
-            
-            // Delay the loop every 4 seconds until the next fish spawns
-            Greenfoot.delay(240);
         }
     }
     

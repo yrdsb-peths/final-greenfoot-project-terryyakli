@@ -49,7 +49,7 @@ public class Fish extends Actor
     int imageIndex = 0;
     public void animateFish()
     {
-        if(animationTimer.millisElapsed() < 50)
+        if(animationTimer.millisElapsed() < 250)
         {
             return;
         }

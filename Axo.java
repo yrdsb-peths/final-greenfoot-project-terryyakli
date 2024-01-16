@@ -58,9 +58,6 @@ public class Axo extends Actor
         collectPlant();
         heal();
         damage();
-        
-
-        
     }
     
     public Axo()
