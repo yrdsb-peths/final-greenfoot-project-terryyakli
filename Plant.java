@@ -27,7 +27,7 @@ public class Plant extends Actor
     public Plant() {
         for(int i = 0; i < Plant.length; i++) {
             Plant[i] = new GreenfootImage("images/plant_idle/plant"+ i + ".png");
-            Plant[i].scale(45,45);
+            Plant[i].scale(60,60);
             setImage(Plant[i]);
         }
         
@@ -37,7 +37,7 @@ public class Plant extends Actor
     
     int imageIndex = 0;
     public void animatePlant() {
-        if(animationTimer.millisElapsed() < 45) {
+        if(animationTimer.millisElapsed() < 250) {
             return;
         }
         

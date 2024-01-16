@@ -31,7 +31,6 @@ public class MyWorld extends World
         addObject(plantLabel, 150, 650);
         
         
-        
         addObject(axoHealthBar, 120, 25);
         
         fishPattern();
@@ -60,11 +59,41 @@ public class MyWorld extends World
         addObject(Fish, x, y);
     }
     
+    public void createFish2() {
+        Fish Fish = new Fish();
+        Fish.setSpeed(speed);
+        int x = randomNumber(1000, 1500);
+        int y = randomNumber(50, 410);
+        addObject(Fish, x, y);
+    }
+    
+    public void createFish3() {
+        Fish Fish = new Fish();
+        Fish.setSpeed(speed);
+        int x = randomNumber(1000, 1500);
+        int y = randomNumber(50, 410);
+        addObject(Fish, x, y);
+    }
+    
     public void fishPattern()
     {
+        int min = 1;
+        int max = 3;
         for(int i = 0; i <= 2; i++)
         {
-            createFish();
+            int randomNum = (int)(Math.random()*(max-min+1))+min;
+            if(randomNum == 1)
+            {
+                createFish();
+            }
+            if(randomNum == 2)
+            {
+                createFish2();
+            }
+            if(randomNum == 3)
+            {
+                createFish3();
+            }
         }
     }
     
