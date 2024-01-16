@@ -36,7 +36,13 @@ public class MyWorld extends World
         createPlant();
         createHeal();
         stuff();
+        
+        
+        BackButton backButton = new BackButton();
+        addObject(backButton, 500, 500);
     }
+    
+    
     
     public void stuff() {
         Label health = new Label("HP" , 20);
