@@ -25,11 +25,10 @@ public class MyWorld extends World
     
     public void prepare() {
         Axo Axo = new Axo();
-        addObject(Axo, 100, 250);
+        addObject(Axo, 100, 325);
 
         plantLabel = new Label(0, 50);
-        addObject(plantLabel, 150, 650);
-        
+        addObject(plantLabel, 180, 620);
         
         addObject(axoHealthBar, 120, 25);
         
@@ -41,9 +40,9 @@ public class MyWorld extends World
     
     public void stuff() {
         Label health = new Label("HP" , 20);
-        addObject(health, 250, 50);
+        addObject(health, 240, 25);
         Label plant = new Label("Plants: ",50);
-        addObject(plant, 100, 650);
+        addObject(plant, 90, 620);
     }
     
     public void gameOver() {

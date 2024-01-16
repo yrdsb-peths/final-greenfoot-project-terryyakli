@@ -33,28 +33,32 @@ public class Axo extends Actor
         {
             x+=2;
             facing = "right";
+            animateAxo();
         }
         if(Greenfoot.isKeyDown("A")) 
         {
             x-=2;
             facing = "left";
+            animateAxo();
         }
         setLocation(getX() + x, getY());
 
         if(Greenfoot.isKeyDown("S")) 
         {
             y+=2;
+            animateAxo();
         }
         if(Greenfoot.isKeyDown("W")) 
         {
             y-=2;
+            animateAxo();
         }
         setLocation(getX(), getY() + y);
 
         collectPlant();
         heal();
         damage();
-        animateAxo();
+        
 
         
     }
