@@ -17,7 +17,7 @@ public class EndScreen extends World
     {
         // Add the BackButton to the world
         backButton = new BackButton();
-        addObject(backButton, getWidth() / 2, getHeight() / 2); // Center the button
+        addObject(backButton, 310, 525);
     }
 
     public void act()

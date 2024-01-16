@@ -12,7 +12,6 @@ public class Axo extends Actor
     GreenfootImage[] axoLeft = new GreenfootImage[7];
     SimpleTimer animationTimer = new SimpleTimer();
     
-    //GreenfootSound //sound name = new GreenfootSound(//name.mp3);
     
     
     
@@ -113,7 +112,7 @@ public class Axo extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createPlant();
             world.increaseScore();
-            //play crunch sound
+            Greenfoot.playSound("crunch.mp3");
         }
     }
     
@@ -125,6 +124,10 @@ public class Axo extends Actor
             removeTouching(Fish.class);
             MyWorld world = (MyWorld) getWorld();
             Health Health = world.getAxoHealthBar();
+            
+            //Sound effect for fish
+            Greenfoot.playSound("pain.mp3");
+
             if(x == false)
             {
                 Health.damage();
@@ -133,38 +136,7 @@ public class Axo extends Actor
                 if(Health.health <=0)
                 {
                     world.gameOver();
-                }
-            }
-        }
-        if(isTouching(Fish2.class))
-        {
-            removeTouching(Fish2.class);
-            MyWorld world = (MyWorld) getWorld();
-            Health Health = world.getAxoHealthBar();
-            if(x == false)
-            {
-                Health.damage2();
-                world.createFish();
-                x = true;
-                if(Health.health <=0)
-                {
-                    world.gameOver();
-                }
-            }
-        }
-        if(isTouching(Fish3.class))
-        {
-            removeTouching(Fish3.class);
-            MyWorld world = (MyWorld) getWorld();
-            Health Health = world.getAxoHealthBar();
-            if(x == false)
-            {
-                Health.damage3();
-                world.createFish();
-                x = true;
-                if(Health.health <=0)
-                {
-                    world.gameOver();
+                    Greenfoot.playSound("gameover.mp3");
                 }
             }
         }
@@ -182,6 +154,9 @@ public class Axo extends Actor
             removeTouching(Heal.class);
             MyWorld world = (MyWorld) getWorld();
             Health Health = world.getAxoHealthBar();
+            
+            Greenfoot.playSound("slurp.mp3");
+
             if(y == false)
             {
                 if(Health.health == 5)

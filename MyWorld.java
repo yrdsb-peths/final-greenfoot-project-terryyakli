@@ -39,7 +39,7 @@ public class MyWorld extends World
         
         
         BackButton backButton = new BackButton();
-        addObject(backButton, 500, 500);
+        //addObject(backButton, 500, 500);
     }
     
     
@@ -64,26 +64,27 @@ public class MyWorld extends World
         addObject(Fish, x, y);
     }
     
+    
     public void createFish2() {
-        Fish Fish = new Fish();
-        Fish.setSpeed(speed);
+        Fish Fish2 = new Fish();
+        Fish2.setSpeed(speed);
         int x = randomNumber(1000, 1500);
         int y = randomNumber(50, 410);
-        addObject(Fish, x, y);
+        addObject(Fish2, x, y);
     }
     
     public void createFish3() {
-        Fish Fish = new Fish();
-        Fish.setSpeed(speed);
+        Fish Fish3 = new Fish();
+        Fish3.setSpeed(speed);
         int x = randomNumber(1000, 1500);
         int y = randomNumber(50, 410);
-        addObject(Fish, x, y);
+        addObject(Fish3, x, y);
     }
     
     public void fishPattern()
     {
         int min = 0;
-        int max = 2;
+        int max = 3;
         for(int i = 0; i <= 1; i++)
         {
             int randomNum = (int)(Math.random()*(max-min))+min;
