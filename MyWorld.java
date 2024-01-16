@@ -93,6 +93,9 @@ public class MyWorld extends World
             {
                 createFish3();
             }
+            
+            // Delay the loop every 4 seconds until the next fish spawns
+            Greenfoot.delay(240);
         }
     }
     
