@@ -15,7 +15,7 @@ public class EndScreen extends World
      */
     public EndScreen()
     {    
-        super(600, 400, 1);
+        super(880, 650, 1);
         prepare();
     }
     
@@ -31,9 +31,9 @@ public class EndScreen extends World
     public void prepare()
     {
         Label gameOverLabel = new Label("Game over", 100);
-        addObject(gameOverLabel, 300, 200);
+        addObject(gameOverLabel, 280,455);
 
         Label label = new Label ("Press [space] to restart", 40);
-        addObject(label, 300, 280);
+        addObject(label, 250,535);
     }
 }

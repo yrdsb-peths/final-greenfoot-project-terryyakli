@@ -11,7 +11,13 @@ public class Axo extends Actor
     GreenfootImage[] axoRight = new GreenfootImage[7];
     GreenfootImage[] axoLeft = new GreenfootImage[7];
     SimpleTimer animationTimer = new SimpleTimer();
-
+    
+    //GreenfootSound //sound name = new GreenfootSound(//name.mp3);
+    
+    
+    
+    
+    
     String facing = "right";
 
     /**
@@ -71,6 +77,7 @@ public class Axo extends Actor
         }
 
         animationTimer.mark();
+        setImage(axoRight[0]);
     }
     
     int imageIndex = 0;
@@ -105,6 +112,7 @@ public class Axo extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createPlant();
             world.increaseScore();
+            //play crunch sound
         }
     }
     
@@ -119,6 +127,38 @@ public class Axo extends Actor
             if(x == false)
             {
                 Health.damage();
+                world.createFish();
+                x = true;
+                if(Health.health <=0)
+                {
+                    world.gameOver();
+                }
+            }
+        }
+        if(isTouching(Fish2.class))
+        {
+            removeTouching(Fish2.class);
+            MyWorld world = (MyWorld) getWorld();
+            Health Health = world.getAxoHealthBar();
+            if(x == false)
+            {
+                Health.damage2();
+                world.createFish();
+                x = true;
+                if(Health.health <=0)
+                {
+                    world.gameOver();
+                }
+            }
+        }
+        if(isTouching(Fish3.class))
+        {
+            removeTouching(Fish3.class);
+            MyWorld world = (MyWorld) getWorld();
+            Health Health = world.getAxoHealthBar();
+            if(x == false)
+            {
+                Health.damage3();
                 world.createFish();
                 x = true;
                 if(Health.health <=0)

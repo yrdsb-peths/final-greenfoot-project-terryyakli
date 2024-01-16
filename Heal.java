@@ -37,7 +37,7 @@ public class Heal extends Actor
     
     int imageIndex = 0;
     public void animateHealthWorm() {
-        if(animationTimer.millisElapsed() < 50)
+        if(animationTimer.millisElapsed() < 300)
         {
             return;
         }
