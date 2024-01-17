@@ -12,11 +12,6 @@ public class Axo extends Actor
     GreenfootImage[] axoLeft = new GreenfootImage[7];
     SimpleTimer animationTimer = new SimpleTimer();
     
-    
-    
-    
-    
-    
     String facing = "right";
 
     /**
@@ -27,7 +22,7 @@ public class Axo extends Actor
     {
         int x = 0;
         int y = 0;
-
+        //Animate and move the axolotl only if player is clicking ASDW
         if(Greenfoot.isKeyDown("D")) 
         {
             x+=2;
@@ -119,6 +114,7 @@ public class Axo extends Actor
     boolean x = false;
     public void damage()
     {
+        // Taking damage code if Axo.java touches Fish.java
         if(isTouching(Fish.class))
         {
             removeTouching(Fish.class);
