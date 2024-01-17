@@ -81,7 +81,11 @@ editor.fx.0.width=1550
 editor.fx.0.x=-7
 editor.fx.0.y=-7
 <<<<<<< HEAD
+<<<<<<< HEAD
 height=27
+=======
+height=814
+>>>>>>> 03ac5f351686d33bfde3dabede47a6530671f0b0
 =======
 height=814
 >>>>>>> 03ac5f351686d33bfde3dabede47a6530671f0b0
@@ -187,7 +191,11 @@ target9.x=0
 target9.y=0
 version=3.1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 width=159
+=======
+width=1534
+>>>>>>> 03ac5f351686d33bfde3dabede47a6530671f0b0
 =======
 width=1534
 >>>>>>> 03ac5f351686d33bfde3dabede47a6530671f0b0
