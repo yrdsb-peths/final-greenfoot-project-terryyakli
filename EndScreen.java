@@ -1,8 +1,12 @@
-import greenfoot.*;
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+/**
+ * @author Theresa Li 
+ * @version January 2023
+ */
 public class EndScreen extends World
 {
-    private BackButton backButton; // Declare a BackButton instance
+    private BackButton backButton;
 
     /**
      * Constructor for objects of class EndScreen.
